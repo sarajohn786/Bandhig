@@ -42,12 +42,41 @@
     font-size: 10rem;
     color: rgba(50, 4, 83,0.9);
 }
-.rotate i{
-  
-    animation: itus infinite linear 1s infinite alternate ;
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+@media (max-width:1440px) {
+    .container{
+        width: auto;
+    }
+    .rotate i{
+        top: 64%;
+        left: 40%;
+    }
 }
-@keyframes itus{
-    from{color:yellowgreen ;}
-    to{color: brown;}
+@media (max-width:1024px) {
+    .rotate i{
+        top: 80%;
+        left:40%;
+    }
+}
+@media (max-width:768px) {
+    .rotate i{
+        top: 80%;
+        left:40%;
+    }
+}
+
+@media (max-width:460px) {
+    .container{
+        min-width: 320px;
+        max-width: 600px;
+        height: 500px;
+        font: 1.5rem;
+    }
+    .container p{
+        font-size: 1.5rem;
+    }
+    .rotate i{
+        top: 65%;
+        left: 100px;
+    }
 }
